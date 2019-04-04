@@ -12,4 +12,4 @@ build:
 
 artifacts:
   - path: GreenEggsAndHam\bin\$(configuration)\netcoreapp2.1
-    name: myapp
+    name: samiam
