@@ -3,12 +3,13 @@ image: Visual Studio 2017
 before_build:
 - nuget restore
 
+platform: Any CPU
+configuration: Release
+
 build:
   project: GreenEggsAndHam.sln
   verbosity: minimal
 
 artifacts:
-
-  # pushing a single file with environment variable in path and "Deployment name" specified
   - path: GreenEggsAndHam\bin\$(configuration)\netcoreapp2.1
     name: myapp
